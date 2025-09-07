@@ -1,0 +1,104 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Courier New', monospace;
+    color: #fff;
+    overflow-x: hidden;
+    background: url('background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Overlay para contraste */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10,10,30,0.6); /* semitransparente escuro */
+    z-index: -1;
+}
+
+/* Container do quiz */
+.container {
+    position: relative;
+    z-index: 1;
+    margin: 60px auto;
+    width: 90%;
+    max-width: 720px;
+    padding: 30px;
+    background: rgba(20,20,40,0.85); /* fundo semitransparente */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.3);
+    text-align: center;
+}
+
+/* Cabeçalhos */
+h1, h2 {
+    color: #00ffff;
+    margin-top: 0;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+/* Parágrafos */
+p {
+    font-size: 18px;
+    color: #ccc;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+/* Labels das opções */
+label {
+    display: block;
+    margin: 12px 0;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #00ffff;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    background: #00ffff;
+    color: #000;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px #000;
+}
+
+.btn:hover {
+    background: #00b8b8;
+    color: #fff;
+    box-shadow: 0 0 15px #00ffff, 0 0 20px #00ffff;
+}
+
+/* Feedback */
+.feedback {
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: bold;
+    text-shadow: 0 0 5px #000;
+}
+
+.feedback.ok {
+    color: #00ff00;   /* verde neon */
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.feedback.err {
+    color: #ff3300;   /* vermelho neon */
+    text-shadow: 0 0 10px #ff3300;
+}
